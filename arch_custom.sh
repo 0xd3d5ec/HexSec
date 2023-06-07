@@ -25,7 +25,12 @@ pacman -S --noconfirm blackarch-config-zsh
 # 6. Copy zsh config file
 cp /usr/share/blackarch-config-zsh/zshrc /etc/zsh/zshrc
 
-# 7. Change xfce4 panel or import panel profile
+# 7. Clone personal aliases and add them to .zshrc
+git clone https://gitlab.com/Ded5ec/dotfiles
+cat dotfiles/aliases >> ~/.zshrc
+source ~/.zshrc
+
+# 8. Change xfce4 panel or import panel profile
 # Option 1: Change xfce4 panel
 # xfconf-query -c xfce4-panel -p /panels/panel-1/style -s "vertical"
 # xfconf-query -c xfce4-panel -p /panels/panel-1/size -s "32"
@@ -36,7 +41,7 @@ cp /usr/share/blackarch-config-zsh/zshrc /etc/zsh/zshrc
 # Option 2: Import panel profile (if available)
 xfce4-panel-profiles -R ~/dotfiles/panel_profiles/panel_profile.tar.bz2
 
-# 8. Install other important tools for VM optimization
+# 9. Install other important tools for VM optimization
 pacman -S --noconfirm xfce4-power-manager tlp
 
 echo "XFCE4 customization and VM optimization completed successfully!"
