@@ -23,7 +23,7 @@ xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
 pacman -S --noconfirm blackarch-config-zsh
 
 # 6. Copy zsh config file
-cp /usr/share/blackarch-config-zsh/zshrc /etc/zsh/zshrc
+cp /usr/share/blackarch-config-zsh/zshrc ~/.zshrc
 
 # 7. Clone personal aliases and add them to .zshrc
 git clone https://gitlab.com/Ded5ec/dotfiles
