@@ -13,7 +13,9 @@ sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/' /etc/pacman.conf
 pacman -Syu --noconfirm
 
 # 3. Install required packages
-pacman -S --noconfirm kitty vmware-tools zsh zsh-autosuggestions zsh-syntax-highlighting ttf-dejavu
+pacman -S --noconfirm kitty open-vm-tools zsh zsh-autosuggestions zsh-syntax-highlighting ttf-dejavu
+sudo systemctl start vmtoolsd
+sudo systemctl enable vmtoolsd
 
 # 4. Change default shell to zsh
 chsh -s /bin/zsh
