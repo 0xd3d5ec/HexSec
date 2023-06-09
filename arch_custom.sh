@@ -6,6 +6,22 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+#!/bin/bash
+
+# Clone the wallpaper repository
+git clone https://github.com/0xd3d5ec/wa11p4p3rs.git
+
+# Set the path to the wallpaper
+wallpaper_path="$(pwd)/wa11p4p3rs/camo.png"
+
+# Change the wallpaper using xfconf-query
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/last-image -s "$wallpaper_path"
+
+# Remove the cloned repository
+# rm -rf wa11p4p3rs
+
+
+
 # 1. Install xfce4 theme - Plata Blue Noir Compact
 paru -S --noconfirm plata-theme
 
