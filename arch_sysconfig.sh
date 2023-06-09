@@ -6,6 +6,15 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+# Backup the GRUB configuration file
+sudo cp /etc/default/grub /etc/default/grub.backup
+
+# Edit the GRUB configuration file to disable the timeout
+sudo sed -i 's/GRUB_TIMEOUT=[0-9]\+/GRUB_TIMEOUT=0/' /etc/default/grub
+
+# Update GRUB
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
 # 1. Change pacman.conf to enable parallel downloads
 sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/' /etc/pacman.conf
 
