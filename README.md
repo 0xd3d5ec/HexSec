@@ -10,4 +10,4 @@ Configure snapper for system backups, in addition hooks are setup with pacman op
 
 ## Customization script
 Customize arch linux XFCE environment, icons, wallpaper and XFCE panel profile.<br>
-arch_custom.sh
+<code>arch_custom.sh</code>
