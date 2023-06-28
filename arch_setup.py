@@ -17,7 +17,7 @@ os.environ['TZ'] = 'UTC'
 execute_command('timedatectl set-ntp true', success_message='Time and date configured successfully.')
 
 # Check latest Arch Linux mirrors
-execute_command('reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist',
+execute_command('reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist 2>/dev/null',
                 success_message='Latest mirrors fetched and saved successfully.',
                 error_message='Failed to update mirrorlist.')
 
