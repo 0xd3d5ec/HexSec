@@ -4,6 +4,10 @@ import os
 os.environ['TZ'] = 'UTC'
 os.system('timedatectl set-ntp true')
 
+# Check latest Arch Linux mirrors 
+os.system('reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist 2>/dev/null') 
+
+
 # Enable parallel downloads for pacman 
 os.system('sed -i "s/^#\(ParallelDownloads = \)5/\10/" /etc/pacman.conf')
 
