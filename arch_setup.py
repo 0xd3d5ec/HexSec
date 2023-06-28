@@ -16,8 +16,8 @@ os.system('mkfs.btrfs /dev/sdaX')  # Replace 'sdaX' with your partition
 # Mount the root partition
 os.system('mount /dev/sdaX /mnt')  # Replace 'sdaX' with your partition
 
-# Install the base system
-os.system('pacstrap /mnt base base-devel linux-lts linux-firmware')
+# Install the base system with parallel downloads
+os.system('pacstrap -j 10 /mnt base base-devel linux-lts linux-firmware')
 
 # Generate fstab
 os.system('genfstab -U /mnt >> /mnt/etc/fstab')
