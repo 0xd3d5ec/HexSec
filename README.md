@@ -3,7 +3,7 @@ My personal Arch Linux scripts.
 
 ## Arch Linux installation script
 Install and configure arch linux with grub, Linux lts, btrfs fs and snapper for snapshots.</br>
-<code>arch_setup.</code>
+<code>arch_setup.py</code>
 
 ## Configuration scripts
 Configure different aspects of arch system.<br>
