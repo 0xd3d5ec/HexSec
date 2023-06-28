@@ -22,7 +22,7 @@ execute_command('reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorli
                 error_message='Failed to update mirrorlist.')
 
 # Enable parallel downloads for pacman
-execute_command('sed -i "s/^#\(ParallelDownloads = \)5/\120/" /etc/pacman.conf',
+execute_command('sed -i "s/^#\(ParallelDownloads = \)5/\10/" /etc/pacman.conf',
                 success_message='Parallel downloads enabled for pacman.')
 
 # Partition the disk
