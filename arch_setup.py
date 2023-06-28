@@ -4,6 +4,9 @@ import os
 os.environ['TZ'] = 'UTC'
 os.system('timedatectl set-ntp true')
 
+# Enable parallel downloads for pacman 
+os.system('sed -i "s/^#\(ParallelDownloads = \)5/\10/" /etc/pacman.conf')
+
 # Partition the disk
 os.system('cfdisk')
 
