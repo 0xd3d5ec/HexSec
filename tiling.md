@@ -9,5 +9,4 @@ I will be using kde-bismuth which can be installed from the aur using any of the
 ```paru -Sy gnome-shell-extension-pop-shell-bin```
 
 ## Configs
----
 You will find my config file attached (which is must) avoid having to reconfigure the tiling configuration everytime I reinstall (KDE).
