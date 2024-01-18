@@ -1,7 +1,6 @@
-
+![image](https://github.com/0xd3d5ec/archloader/assets/23657222/f5d06688-1ac6-4d45-8aca-c5a1d30d1008)
 # Archloader
 My personal Arch Linux scripts.
-![black-arch](https://github.com/0xd3d5ec/archloader/assets/23657222/ee1ca8fd-d23e-4ab2-b46c-3abd651dc1e3)
 
 ## Arch Linux installation script
 Install and configure arch linux with grub, Linux lts, btrfs fs and snapper for snapshots.</br>
