@@ -1,5 +1,5 @@
-![image](https://github.com/0xd3d5ec/archloader/assets/23657222/f5d06688-1ac6-4d45-8aca-c5a1d30d1008)
-![img](https://w.wallhaven.cc/full/4l/wallhaven-4l36rl.png)
+![wallhaven-4l36rl](https://github.com/0xd3d5ec/HexSec/assets/23657222/45e502b2-ba2d-4d82-b7ad-3db4c2177b32)
+
 
 # Archloader
 My personal Arch Linux scripts.
