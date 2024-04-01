@@ -1,4 +1,4 @@
-![wallhaven-4l36rl](https://github.com/0xd3d5ec/HexSec/assets/23657222/45e502b2-ba2d-4d82-b7ad-3db4c2177b32)
+![wallhaven-4l36rl](https://github.com/0xd3d5ec/HexSec/assets/23657222/ee9012bc-5075-4d79-8817-67e51005677a)
 # HexSec
 A repo for my personal scripts that aim to customize arch linux for my security research workflow.
 
