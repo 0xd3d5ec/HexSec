@@ -4,11 +4,11 @@ A repo for my personal scripts that aim to customize arch linux for my security 
 
 ## Installation script
 Install and configure arch linux with grub, Linux lts, btrfs fs and snapper for snapshots.</br>
-<code>arch_setup.py</code>
+<code>setup.py</code>
 
 ## Configuration script
 Configure different aspects of the system.
-<code>arch_sysconfig.sh</code>
+<code>sysconf.sh</code>
 
 ## System backup using snapper
 Configure snapper for system backups, in addition hooks are setup with pacman operations when executed.
@@ -16,4 +16,4 @@ Configure snapper for system backups, in addition hooks are setup with pacman op
 
 ## Customization script
 Customize arch linux XFCE theme, icons, wallpaper and XFCE panel profile.
-<code>arch_custom.sh</code>
+<code>custom.sh</code>
